@@ -1,0 +1,18 @@
+title New note on form POST
+
+browser->server: POST https://fullstack-exampleapp.herokuapp.com/new_note
+server-->browser: 302 Redirect
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->browser: HTML-code
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: main.js
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/data.json
+
+note over server:
+the server sends the notes
+with the new note
+end note
+
+server-->browser: JSON with notes

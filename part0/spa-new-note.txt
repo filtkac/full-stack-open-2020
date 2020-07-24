@@ -1,0 +1,17 @@
+title SPA new note
+
+note over browser:
+the request contains the new note
+in the JSON format
+end note
+
+browser->server: POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+the new note is saved to the array in the js file
+as well as sent to the server with AJAX,
+at the end the notes are redrawn
+using the js array
+end note
+
+server-->browser: JSON confirming message creation

@@ -1,0 +1,16 @@
+title SPA notes
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/spa
+server-->browser: HTML-code
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server-->browser: spa.js
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/data.json
+
+note over server:
+the server sends the notes
+upon the script execution
+end note
+
+server-->browser: JSON with notes
